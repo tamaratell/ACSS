@@ -1,0 +1,64 @@
+$turquoise: rgb(0, 128, 128);
+$icon-turqoise: rgba(0, 128, 128, 0.65);
+$bordeaux: #B60D0F;
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+wrapper {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.page-title__with-bg {
+  background-image: url('assets/mosaic_transparent.jpg');
+  background-size: contain;
+  background-position: center;
+  max-width: 90%;
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+    padding: 1.5rem;
+  }
+}
+
+.page-content {
+  max-width: 90%;
+  margin: 0 auto;
+
+  a {
+    color: $turquoise;
+  }
+
+  i {
+    color: $icon-turqoise;
+    font-size: 4rem;
+  }
+
+  .red-divider {
+    color: $bordeaux;
+  }
+}
+
+.section-title__underline {
+  border-bottom: $bordeaux solid 1.5px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+
+  .icon-container__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    p {
+      width: 80%;
+      text-align: center;
+    }
+  }
+}
