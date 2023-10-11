@@ -2167,4 +2167,30 @@ a.btn.red_btn:hover {
   margin-right: 1rem;
 }
 
+.title-with-details h1 {
+  margin-bottom: 0;
+}
+.title-with-details p {
+  margin-top: 0;
+}
+.title-with-details .page-title_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 90%;
+}
+.title-with-details .page-title_details a {
+  color: rgb(0, 128, 128);
+  text-decoration: none;
+  padding: 0 0.5rem;
+}
+.title-with-details .page-title_details a:hover {
+  color: #B60D0F;
+}
+.title-with-details .page-title_details a:nth-of-type(even) {
+  padding-right: 0;
+  border-left: #B60D0F solid 1px;
+}
+
 /*# sourceMappingURL=styles.css.map */
