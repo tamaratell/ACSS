@@ -57,6 +57,15 @@ wrapper {
   }
 }
 
+.mosaic {
+  background-image: url(/Users/tamaratell/acss/assets/mosaic_bottom.jpg);
+  background-size: contain;
+  background-position: center;
+  height: 2rem;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
 .section-title__underline {
   border-bottom: $bordeaux solid 1.5px;
 }
