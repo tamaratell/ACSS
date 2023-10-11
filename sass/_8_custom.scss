@@ -4,6 +4,8 @@ $bordeaux: #B60D0F;
 $font: #1F1F1F;
 $dark-grey: #263238;
 
+// General Styles
+
 body {
   font-family: 'Source Sans 3', sans-serif;
 
@@ -22,6 +24,9 @@ wrapper {
   max-width: 90%;
 }
 
+// BEGINNING OF PAGE TITLE/HEADER STYLES
+// Page Title Styles (h1 with background) 
+
 .page-title__with-bg {
   background-image: url('assets/mosaic_transparent.jpg');
   background-size: contain;
@@ -34,6 +39,48 @@ wrapper {
     padding: 1.5rem;
   }
 }
+
+// Styles for page title with details underneath. (h1 with background + author details/ lecture details and links to download pdfs) 
+
+.title-with-details {
+  h1 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .page-title_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 90%;
+
+    a {
+      color: $turquoise;
+      text-decoration: none;
+      padding: 0 0.5rem;
+
+      &:hover {
+        color: $bordeaux;
+      }
+
+      &:nth-of-type(even) {
+        padding-right: 0;
+        border-left: $bordeaux solid 1px;
+      }
+    }
+
+  }
+}
+
+// END OF PAGE HEADER/TITLE STYLES
+
+
+//BEGINNING OF PAGE CONTENT STYLES
+// General page content styles
 
 .page-content {
   max-width: 90%;
@@ -57,18 +104,14 @@ wrapper {
   }
 }
 
-.mosaic {
-  background-image: url(/Users/tamaratell/acss/assets/mosaic_bottom.jpg);
-  background-size: contain;
-  background-position: center;
-  height: 2rem;
-  max-width: 90%;
-  margin: 2rem auto;
-}
+// Underline for section titles
 
 .section-title__underline {
   border-bottom: $bordeaux solid 1.5px;
 }
+
+
+// Three piece icon section styles.
 
 .icon-container {
   display: flex;
@@ -87,6 +130,7 @@ wrapper {
   }
 }
 
+// Styles for content section that has a list and an image.
 .section-content__list-image {
   display: flex;
   justify-content: space-evenly;
@@ -105,6 +149,7 @@ wrapper {
   }
 }
 
+// Button styles. 
 a.btn.footbtn {
   background-color: rgba(255, 255, 255, 0.50);
   color: $font;
@@ -141,6 +186,7 @@ a.btn.red_btn {
   }
 }
 
+// Styles for open calls section
 .open-calls {
   padding: 2rem;
   border-radius: 0.2rem;
@@ -153,6 +199,8 @@ a.btn.red_btn {
   &:hover {
     box-shadow: 0px 9px 9px 0px rgba(0, 0, 0, 0.25);
   }
+
+  // Styles for open calls containers. Each program with an open call should have its own container.
 
   .open-calls_container {
     display: flex;
@@ -189,39 +237,7 @@ a.btn.red_btn {
   }
 }
 
-.title-with-details {
-  h1 {
-    margin-bottom: 0;
-  }
-
-  p {
-    margin-top: 0;
-  }
-
-  .page-title_details {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 auto;
-    max-width: 90%;
-
-    a {
-      color: $turquoise;
-      text-decoration: none;
-      padding: 0 0.5rem;
-
-      &:hover {
-        color: $bordeaux;
-      }
-
-      &:nth-of-type(even) {
-        padding-right: 0;
-        border-left: $bordeaux solid 1px;
-      }
-    }
-
-  }
-}
+//LECTURE SERIES AND PUBLICATION PAGES STYLES.
 
 p.red-border {
   border-left: $bordeaux solid 1px;
@@ -232,6 +248,8 @@ p.red-border {
 article.page-summary h2 {
   margin-top: 0;
 }
+
+//These are the styles for the alternating zig-zag content/image layout. For the lecture pages, each lecture will have one description and image. For publication pages, each paragraph (with the exception of the page summary) will have a description and image.
 
 .lecture-series {
 
@@ -290,4 +308,16 @@ article.page-summary h2 {
   &:first-of-type {
     margin-top: 2rem;
   }
+}
+
+//FOOTER STYLES
+
+//Footer mosaic divider styles
+.mosaic {
+  background-image: url(/Users/tamaratell/acss/assets/mosaic_bottom.jpg);
+  background-size: contain;
+  background-position: center;
+  height: 2rem;
+  max-width: 90%;
+  margin: 2rem auto;
 }
