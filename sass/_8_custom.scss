@@ -222,3 +222,72 @@ a.btn.red_btn {
 
   }
 }
+
+p.red-border {
+  border-left: $bordeaux solid 1px;
+  padding-left: 0.5rem;
+  margin: 2rem 0;
+}
+
+article.page-summary h2 {
+  margin-top: 0;
+}
+
+.lecture-series {
+
+  padding-bottom: 2rem;
+
+  .section-content_desc-img {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+    }
+
+    img {
+      border-radius: 6.25rem 6.25rem 0rem 0rem;
+      width: 18rem;
+      min-height: 20rem;
+      flex-shrink: 0;
+      object-fit: cover;
+      margin-left: 6rem;
+      margin-right: 4rem;
+      align-self: stretch;
+      transition: border .1s ease-in-out, box-shadow .1s ease-in-out;
+
+      &:hover {
+        border: $turquoise 1px solid;
+        box-shadow: 0px 0px 15px 8px rgba(209, 214, 170, 0.3);
+      }
+    }
+  }
+
+  &:nth-of-type(odd) {
+
+    .section-content_desc-img {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      margin-top: 0;
+
+      .section-content_desc {
+        margin-left: 6rem;
+        margin-right: 4rem;
+
+      }
+
+      img {
+        align-self: stretch;
+        margin: 0;
+        margin-top: 1rem;
+      }
+    }
+
+  }
+
+  &:first-of-type {
+    margin-top: 2rem;
+  }
+}
