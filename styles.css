@@ -2049,7 +2049,6 @@ wrapper {
 }
 .page-content h5 {
   font-size: 1.2rem;
-  line-height: 1.5rem;
 }
 
 .section-title__underline {
@@ -2116,6 +2115,47 @@ a.btn.red_btn:hover {
   background-color: #263238;
   border-color: #263238;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.open-calls {
+  padding: 2rem;
+  border-radius: 0.2rem;
+  border: 1px solid #EFEFEF;
+  background-image: url(assets/mosaic_backdrop.jpeg);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  transition: box-shadow 0.15s ease-in-out;
+}
+.open-calls:hover {
+  box-shadow: 0px 9px 9px 0px rgba(0, 0, 0, 0.25);
+}
+.open-calls .open-calls_container {
+  display: flex;
+  justify-content: flex-start;
+}
+.open-calls .open-calls_container .open-calls_container_img {
+  width: 11.5625rem;
+  height: 11.1rem;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 2px;
+}
+.open-calls .open-calls_container .open-calls_container_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+.open-calls .open-calls_container .open-calls_container_content p,
+.open-calls .open-calls_container .open-calls_container_content h5 {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+.open-calls .open-calls_container .open-calls_container_content .open-calls_container_buttons {
+  margin-top: 1rem;
+}
+.open-calls .open-calls_container .open-calls_container_content .open-calls_container_buttons a {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
